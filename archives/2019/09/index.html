@@ -32,6 +32,8 @@
   <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta property="fb:admins" content="<user_id>">
+  <meta property="fb:app_id" content="<app_id>">
 
 <link rel="stylesheet" href="/css/main.css?v=7.4.0">
 
@@ -304,7 +306,7 @@
         
           
         
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
       </div>
       
 
@@ -429,7 +431,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -442,7 +444,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -506,7 +508,7 @@
   <span class="with-love" id="animate">
     <i class="fa DUOTONE-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">sun</span>
+  <span class="author" itemprop="copyrightHolder">true</span>
 </div>
 <!-------- <div class="powered-by">
  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
@@ -519,7 +521,7 @@
 
 <div class="theme-info">
 <div class="powered-by"></div>
-<span class="post-count">博客全站共142字</span>
+<span class="post-count">博客全站共426字</span>
 </div>
         
 <div class="busuanzi-count">
@@ -581,6 +583,22 @@
 
 
 
+  <script>
+    function fbAsyncInit() {
+      FB.init({
+        appId  : '<app_id>',
+        xfbml  : true,
+        version: 'v3.3'
+      });
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_CN/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
 
 

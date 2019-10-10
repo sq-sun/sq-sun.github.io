@@ -1110,7 +1110,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fffaed;
+  background: #c7dad5;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1931,15 +1931,15 @@ article:last-child .post-eof {
   height: 30px;
 }
 .my_post_copyright {
-  width: 96%;
-  max-width: 65em;
+  width: 85%;
+  max-width: 45em;
   margin: 2.8em auto 0;
   padding: 0.5em 1em;
-  border-left: 3px solid #f00;
-  font-size: 0.85rem;
+  border: 1px solid #d3d3d3;
+  font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
-  background: #f6f6f6;
+  background: rgba(255,255,255,0.4);
 }
 .my_post_copyright p {
   margin: 0;
@@ -1947,8 +1947,8 @@ article:last-child .post-eof {
 .my_post_copyright span {
   display: inline-block;
   width: 5.2em;
-  color: #000;
-  font-weight: normal;
+  color: #b5b5b5;
+  font-weight: bold;
 }
 .my_post_copyright .raw {
   margin-left: 1em;

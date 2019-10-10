@@ -32,6 +32,8 @@
   <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta property="fb:admins" content="<user_id>">
+  <meta property="fb:app_id" content="<app_id>">
 
 <link rel="stylesheet" href="/css/main.css?v=7.4.0">
 
@@ -280,6 +282,104 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/10/博客搭建/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/10/10/博客搭建/" class="post-title-link" itemprop="url">博客搭建</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-10 17:19:56 / 修改时间：17:47:07" itemprop="dateCreated datePublished" datetime="2019-10-10T17:19:56+08:00">2019-10-10</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/10/10/博客搭建/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/10/博客搭建/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+          
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        
+          <h1 id="下载NodeJS"><a href="#下载NodeJS" class="headerlink" title="下载NodeJS"></a>下载NodeJS</h1><p>查看nodejs 版本：Node -v</p>
+<h1 id="安装cnpm"><a href="#安装cnpm" class="headerlink" title="安装cnpm"></a>安装cnpm</h1><p>npm install -g cmpm –registry=<a href="https://registry.mpm.taobao.org" target="_blank" rel="noopener">https://registry.mpm.taobao.org</a><br>或者 npm install hexo-cli -g 完成后直接初始化</p>
+<h1 id="安装hexo-基于node"><a href="#安装hexo-基于node" class="headerlink" title="安装hexo(基于node)"></a>安装hexo(基于node)</h1><p>cnpm install -g hexo-cli</p>
+<h1 id="创建一个blog文件夹"><a href="#创建一个blog文件夹" class="headerlink" title="创建一个blog文件夹"></a>创建一个blog文件夹</h1><h1 id="初始化博客-用管理员权限打开cmd-blog目录下"><a href="#初始化博客-用管理员权限打开cmd-blog目录下" class="headerlink" title="初始化博客[用管理员权限打开cmd]  blog目录下"></a>初始化博客[用管理员权限打开cmd]  blog目录下</h1><p>hexo init (安装完毕后会提示Strart blogging with Hexo! 文件夹内生成若干文件)<br><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C1.png" alt="图片"></p>
+<h1 id="启动博客"><a href="#启动博客" class="headerlink" title="启动博客"></a>启动博客</h1><p>hexo s </p>
+<h1 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h1><p>首先登陆GitHub 新建仓库。仓库命名规范：用户名.github.io<br>在blog文件夹中安装git部署插件<br>npm install –save hexo -deployer-git<br>编辑文件 _config.yml<br>    在文件最底部 type:  git<br>                 repo:  仓库地址（GitHub复制）<br>                 branch:  master<br>接下来部署到远端<br>hexo clean<br>hexo g<br>hexo d (会提示输入Github账号)<br><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C2.png" alt="图片"></p>
+<h1 id="部署到远端可能出现的问题"><a href="#部署到远端可能出现的问题" class="headerlink" title="部署到远端可能出现的问题"></a>部署到远端可能出现的问题</h1><p>如果中途报错，是git未设置global身份，在git bash here中设置身份<br>设置身份： git config –global user.name ‘xxx’<br>           git config –global user.email “<a href="mailto:xxx@qq.com" target="_blank" rel="noopener">xxx@qq.com</a>“<br>查询身份： git config user.name<br>           git config user.email</p>
+<h1 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h1><p>克隆主题：git clone <a href="http://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">http://github.com/theme-next/hexo-theme-next</a> themes/next<br>配置_config.yml文件：<br><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C3.png" alt="图片"></p>
+<h1 id="完成，记得要推到远端。"><a href="#完成，记得要推到远端。" class="headerlink" title="完成，记得要推到远端。"></a>完成，记得要推到远端。</h1>
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        
+        
+          <div class="post-eof"></div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+ 
+}
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/29/sunny/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -342,20 +442,24 @@
 
       
         
-          <p>#fighting</p><p>##搞定</p><ul>
+          <p>#fighting</p>
+<p>##搞定</p>
+<ul>
 <li>列表1</li>
 <li>列表2<br>  a 子列表<br>  b 子列表</li>
 <li>列表3</li>
-</ul><p><a href="https://www.bilibili.com/video/av17653359/?p=11" target="_blank" rel="noopener">链接</a></p><p><img src="https://i01piccdn.sogoucdn.com/a153ab3eb2a5944e" alt="图片"></p><hr><hr><p><em>斜体</em><br><strong>加粗字体</strong><br><code>&lt;html&gt;单行代码&lt;/html&gt;</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;head&gt;</span><br><span class="line">      &lt;title&gt;多行代码&lt;/title&gt;</span><br><span class="line">   &lt;/head&gt;</span><br><span class="line">   &lt;body&gt;&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button">
-              <a class="btn" href="/2019/09/29/sunny/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
+</ul>
+<p><a href="https://www.bilibili.com/video/av17653359/?p=11" target="_blank" rel="noopener">链接</a></p>
+<p><img src="https://i01piccdn.sogoucdn.com/a153ab3eb2a5944e" alt="图片"></p>
+<hr>
+<hr>
+<p><em>斜体</em><br><strong>加粗字体</strong><br><code>&lt;html&gt;单行代码&lt;/html&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;head&gt;</span><br><span class="line">      &lt;title&gt;多行代码&lt;/title&gt;</span><br><span class="line">   &lt;/head&gt;</span><br><span class="line">   &lt;body&gt;&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>引用</p>
+</blockquote>
+
         
       
     </div>
@@ -375,15 +479,7 @@
   
   
   </article>
-  .post-body p a{
-  color: #0593d3;
-  border-bottom: none;
-  border-bottom: 1px solid #0593d3;
-  &:hover {
-    color: #fc6423;
-    border-bottom: none;
-    border-bottom: 1px solid #fc6423;
-  }
+ 
 }
     
         <article itemscope itemtype="http://schema.org/Article">
@@ -450,15 +546,19 @@
       
         
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-          
-            <div class="post-button">
-              <a class="btn" href="/2019/09/29/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
         
       
     </div>
@@ -478,15 +578,7 @@
   
   
   </article>
-  .post-body p a{
-  color: #0593d3;
-  border-bottom: none;
-  border-bottom: 1px solid #0593d3;
-  &:hover {
-    color: #fc6423;
-    border-bottom: none;
-    border-bottom: 1px solid #fc6423;
-  }
+ 
 }
     
   </div>
@@ -539,7 +631,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -552,7 +644,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -616,7 +708,7 @@
   <span class="with-love" id="animate">
     <i class="fa DUOTONE-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">sun</span>
+  <span class="author" itemprop="copyrightHolder">true</span>
 </div>
 <!-------- <div class="powered-by">
  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
@@ -629,7 +721,7 @@
 
 <div class="theme-info">
 <div class="powered-by"></div>
-<span class="post-count">博客全站共142字</span>
+<span class="post-count">博客全站共426字</span>
 </div>
         
 <div class="busuanzi-count">
@@ -691,6 +783,22 @@
 
 
 
+  <script>
+    function fbAsyncInit() {
+      FB.init({
+        appId  : '<app_id>',
+        xfbml  : true,
+        version: 'v3.3'
+      });
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_CN/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
 
 
